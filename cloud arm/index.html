@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cloud arm</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: cornsilk;
+            margin: 0;
+            padding: 0;
+            
+            background-repeat: no-repeat;
+            background-position: center;
+            overflow: auto;
+        }
+
+        /* Navigation bar */
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo a {
+            color: white;
+            text-decoration: none;
+            font-size: 28px;
+            margin-left: 30px;
+            font-family: Lucida Sans Typewriter;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin-right: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        nav ul li {
+            margin-right: 30px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        /* Footer */
+        #footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Main content */
+        #page-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        #content-wrap {
+            max-width: 900px;
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .content-section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        #pic1 {
+            width: 300px;
+            border-radius: 8px;
+        }
+
+        #p2 {
+            font-size: 16px;
+            color: #333;
+            line-height: 1.6;
+            font-weight: bold;
+            text-align: justify;
+        }
+
+        .button-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .button-container button {
+            background-color: #414141;
+            color: white;
+            padding: 14px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 20px;
+            transition: background-color 0.3s;
+        }
+
+        .button-container button:hover {
+            background-color: #2b2b2b;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo"><a href="#">cloud arm</a></div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="login.php">Admin Login</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+    
+    <div id="page-container">
+        <div id="content-wrap">
+            <h2>Welcome</h2>
+            <div class="content-section">
+                
+                <div>
+                    <p id="p2">
+                        "This is an intuitive employee management system designed to streamline your workforce management. It allows you to effortlessly track employee attendance, manage payroll, and oversee performance. With user-friendly features and a sleek interface, this was helps you maintain an organized workplace, enhance communication, and foster employee engagement, ensuring efficient operations and a motivated team."
+                    </p>
+                </div>
+            </div>
+            <div class="button-container">
+                <button onclick="window.location.href='login.php';">Get Started</button>
+            </div>
+        </div>
+    </div>
+    
+    <footer id="footer">
+        <p>Athsara Bimalka</p>
+    </footer>
+</body>
+</html>
